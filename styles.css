@@ -1,0 +1,14 @@
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+
+    model-viewer {
+      width: 80vw;   /* responsive */
+      height: 80vh;
+    }
