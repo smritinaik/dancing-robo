@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model Viewer</title>
+
+  <!-- Import model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+
+    model-viewer {
+      width: 80vw;   /* responsive */
+      height: 80vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="kung_fu_robot.glb" 
+    alt="3D Model"
+    auto-rotate 
+    rotation-per-second="30deg"
+    camera-controls 
+    shadow-intensity="1"
+    autoplay
+
+    camera-orbit="10deg 75deg 3m"
+    field-of-view="10deg"
+    min-camera-orbit="auto auto 2m"
+    max-camera-orbit="auto auto 6m">
+  </model-viewer>
+</body>
+</html>
